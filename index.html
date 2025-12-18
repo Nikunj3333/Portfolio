@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nikunj Raval - Portfolio</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- GSAP for animations -->
+    <script src="https://cdn.jsdelivr.net/npm/gsap/dist/gsap.min.js"></script>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
+      rel="stylesheet" />
+    <style>
+  body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    /* Modern professional background color with gradient */
+    background: linear-gradient(to right, #6e6666, #ff8c00);
+    min-height: 100vh;
+  }
+</style>
+  </head>
+  <body class="text-gray-800">
+
+    <!-- Mobile menu toggle (hidden on large screens) -->
+    <div class="fixed top-4 right-4 z-50 lg:hidden">
+      <button id="menu-toggle"
+        class="bg-white p-2 rounded-full shadow-lg focus:outline-none">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
+
+    <!-- Sidebar Navigation (hidden on small devices, shown as overlay or inline on larger screens) -->
+    <nav id="sidebar"
+      class="fixed inset-y-0 left-0 w-16 bg-white shadow-md flex flex-col items-center justify-center space-y-4 p-4 z-40 transition-transform transform lg:static lg:w-auto lg:flex-row lg:justify-center lg:space-x-6 lg:space-y-0 hidden lg:flex">
+      <a href="#about" class="text-gray-600 hover:text-blue-500 transition"
+        title="About"><i class="fas fa-user fa-lg"></i></a>
+      <a href="#skills" class="text-gray-600 hover:text-blue-500 transition"
+        title="Skills"><i class="fas fa-tools fa-lg"></i></a>
+      <a href="#projects" class="text-gray-600 hover:text-blue-500 transition"
+        title="Projects"><i class="fas fa-briefcase"></i></a>
+      <a href="#gallery" class="text-gray-600 hover:text-blue-500 transition"
+        title="Gallery"><i class="fas fa-image"></i></a>
+      <a href="#videos" class="text-gray-600 hover:text-blue-500 transition"
+        title="Videos"><i class="fab fa-youtube"></i></a>
+      <a href="#journey" class="text-gray-600 hover:text-blue-500 transition"
+        title="journey"><i class="fas fa-comments"></i></a>
+      <a href="#contact" class="text-gray-600 hover:text-blue-500 transition"
+        title="Contact"><i class="fas fa-envelope"></i></a>
+      <a href="#resume" class="text-gray-600 hover:text-blue-500 transition"
+        title="Resume"><i class="fas fa-file-alt"></i></a>
+    </nav>
+
+    <!-- Overlay menu for mobile -->
+    <div id="mobile-menu"
+      class="fixed inset-0 bg-black bg-opacity-50 z-30 hidden lg:hidden"></div>
+
+    <!-- Main Content container -->
+    <div class="pt-20 flex justify-center items-start min-h-screen px-4 w-full">
+      <div class="max-w-7xl w-full">
+
+        <!-- Header -->
+        <section class="text-center mb-12">
+          <h1 class="text-4xl md:text-5xl font-bold mb-4 text-white">Nikunj Raval</h1>
+          <p class="text-xl md:text-2xl text-white">Web Developer | Gamer |
+            Content Creator</p>
+        </section>
+
+        <!-- About Me -->
+        <section id="about"
+          class="bg-white rounded-lg shadow-lg p-8 mb-12 border border-gray-300 mx-auto max-w-4xl">
+          <div class="flex flex-col md:flex-row items-center md:space-x-8">
+            <div
+              class="md:w-1/2 relative mb-4 md:mb-0 rounded-lg overflow-hidden border border-gray-300 shadow-lg aspect-w-4 aspect-h-3 md:aspect-w-3 md:aspect-h-2">
+              <img src="image/nik (1).png" alt="Nikunj"
+                class="w-full h-full object-cover" />
+            </div>
+            <div class="md:w-1/2 p-4 text-center md:text-left">
+              <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+              <p class="text-gray-700 mb-4">Hello! I am Nikunj Raval, A
+                Passionate Web Developer, Gamer, and Content Creator with 36k
+                subscribers. I love following both My passions and my
+                Profession. For now I Whould Like To Focus More In Backend Programming To, Eager to learn more in the IT industry. Experience
+                as a Full Stack Developer Intern at Sypze Technology, While Done
+                This Project -> <a href="http://gtf.org.in" target="_blank"
+                  class="text-blue-500 hover:underline">gtf.org.in</a>.</p>
+              <button onclick="scrollToSection('#resume')"
+                class="mt-4 bg-blue-500 text-white px-4 py-2 rounded-lg shadow hover:bg-blue-600 transition">View
+                My Resume</button>
+            </div>
+          </div>
+        </section>
+
+        <!-- Skills -->
+        <section id="skills"
+          class="bg-white rounded-lg shadow-lg p-8 mb-12 border border-gray-300 mx-auto max-w-4xl">
+          <h2
+            class="text-3xl font-semibold mb-8 flex items-center justify-center"><i
+              class="fas fa-code mr-2"></i> Skills</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            <div
+              class="p-4 bg-gray-100 border border-gray-300 rounded-lg shadow hover:scale-105 transition">
+              <h3 class="font-bold mb-2">HTML & CSS</h3>
+              <p class="text-gray-600">Building structured and styled web
+                pages</p>
+            </div>
+            <div
+              class="p-4 bg-gray-100 border border-gray-300 rounded-lg shadow hover:scale-105 transition">
+              <h3 class="font-bold mb-2">JavaScript</h3>
+              <p class="text-gray-600">Making interactive web applications</p>
+            </div>
+            <div
+              class="p-4 bg-gray-100 border border-gray-300 rounded-lg shadow hover:scale-105 transition">
+              <h3 class="font-bold mb-2">Php/Laravel</h3>
+              <p class="text-gray-600">Build Backend As Admin Pannel For Client
+                To Manage Things of Project</p>
+            </div>
+            <div
+              class="p-4 bg-gray-100 border border-gray-300 rounded-lg shadow hover:scale-105 transition">
+              <h3 class="font-bold mb-2">MySql</h3>
+              <p class="text-gray-600">Use For Database To Store Data</p>
+            </div>
+            <div
+              class="p-4 bg-gray-100 border border-gray-300 rounded-lg shadow hover:scale-105 transition">
+              <h3 class="font-bold mb-2">Capcut</h3>
+              <p class="text-gray-600">Creating Awesome Edits</p>
+            </div>
+            <div
+              class="p-4 bg-gray-100 border border-gray-300 rounded-lg shadow hover:scale-105 transition">
+              <h3 class="font-bold mb-2">Extra - GitHub & Postman</h3>
+              <p class="text-gray-600">Manage And Track Project UptoDate</p>
+            </div>
+          </div>
+        </section>
+
+        <!-- Projects -->
+        <section id="projects"
+          class="bg-white rounded-lg shadow-lg p-8 mb-12 border border-gray-300 mx-auto max-w-4xl">
+          <h2
+            class="text-3xl font-semibold mb-8 flex items-center justify-center"><i
+              class="fas fa-briefcase"></i> My Projects</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Project 1 -->
+            <div
+              class="overflow-hidden rounded-lg shadow hover:scale-105 transition border border-gray-300">
+              <img src="image/grinding.png" alt="Portfolio 1"
+                class="w-full h-full object-cover cursor-pointer"
+                data-img="image/grinding.png" />
+            </div>
+            <!-- Project 2 (Website Link) -->
+            <div
+              class="overflow-hidden rounded-lg shadow hover:scale-105 transition border border-gray-300">
+              <a href="https://gtf.org.in/" target="_blank"
+                rel="noopener noreferrer" class="block w-full h-full">
+                <img src="image/gtf.jpg" alt="Live Project"
+                  class="w-full h-full object-cover cursor-pointer" />
+              </a>
+            </div>
+            <!-- Project 3 -->
+            <div
+              class="overflow-hidden rounded-lg shadow hover:scale-105 transition border border-gray-300">
+              <img src="image/grinding.png" alt="Portfolio 3"
+                class="w-full h-full object-cover cursor-pointer"
+                data-img="image/grinding.png" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Portfolio Gallery -->
+        <section id="gallery"
+          class="bg-white rounded-lg shadow-lg p-8 mb-12 border border-gray-300 mx-auto max-w-4xl">
+          <h2
+            class="text-3xl font-semibold mb-8 flex items-center justify-center"><i
+              class="fas fa-image"></i> Portfolio Gallery</h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <div
+              class="overflow-hidden rounded-lg shadow hover:scale-105 transition border border-gray-300">
+              <img src="image/nikunj1.png" alt="Portfolio 1"
+                class="w-full h-full object-cover cursor-pointer"
+                data-img="image/nikunj1.png" />
+            </div>
+            <div
+              class="overflow-hidden rounded-lg shadow hover:scale-105 transition border border-gray-300">
+              <img src="image/project.png" alt="Portfolio 2"
+                class="w-full h-full object-cover cursor-pointer"
+                data-img="image/project.png" />
+            </div>
+            <div
+              class="overflow-hidden rounded-lg shadow hover:scale-105 transition border border-gray-300">
+              <img src="image/skills.png" alt="Portfolio 3"
+                class="w-full h-full object-cover cursor-pointer"
+                data-img="image/skills.png" />
+            </div>
+          </div>
+        </section>
+
+        <!-- Lightbox Modal -->
+        <div id="lightbox"
+          class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden z-50">
+          <span
+            class="absolute top-4 right-8 text-white text-3xl cursor-pointer"
+            onclick="closeLightbox()">&times;</span>
+          <img id="lightbox-img" src alt="Enlarged Image"
+            class="max-w-full max-h-full rounded-lg shadow-lg" />
+        </div>
+
+        <!-- Videos Section -->
+        <section id="videos"
+          class="bg-white rounded-lg shadow-lg p-8 mb-12 border border-gray-300 mx-auto max-w-4xl">
+          <h2
+            class="text-3xl font-semibold mb-8 flex items-center justify-center"><i
+              class="fa fa-youtube"></i> Barrier Videos</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+            <!-- Video 1 -->
+            <div
+              class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden border border-gray-300 relative cursor-pointer"
+              onclick="openVideo('videos/video.mp4')">
+              <iframe src="videos/video.mp4" frameborder="0" allowfullscreen
+                class="w-full h-full"></iframe>
+              <div
+                class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-lg font-semibold cursor-pointer">
+                Click here to watch video
+              </div>
+            </div>
+            <!-- Video 2 -->
+            <div
+              class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden border border-gray-300 relative cursor-pointer"
+              onclick="openVideo('videos/video2.mp4')">
+              <iframe src="videos/video1.mp4" frameborder="0" allowfullscreen
+                class="w-full h-full"></iframe>
+              <div
+                class="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center text-white text-lg font-semibold cursor-pointer">
+                Click here to watch video
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Video Modal -->
+        <div id="videoModal"
+          class="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center hidden z-50">
+          <div class="relative w-full max-w-3xl p-4">
+            <!-- Close Button -->
+            <button class="absolute top-2 right-2 text-white text-3xl z-50"
+              onclick="closeVideo()">&times;</button>
+            <video id="localVideo" class="w-full aspect-w-16 aspect-h-9"
+              controls></video>
+          </div>
+        </div>
+
+        <!-- My Journey & Struggles -->
+        <section id="journey"
+          class="bg-white rounded-lg shadow-lg p-8 mb-12 border border-gray-300 mx-auto max-w-4xl">
+          <h2
+            class="text-3xl font-semibold mb-8 flex items-center justify-center"><i
+              class="fas fa-heart-broken"></i> My 36k Journey & Challenges</h2>
+          <div class="space-y-6">
+            <div
+              class="bg-gray-100 border border-gray-300 p-6 rounded-lg shadow hover:scale-105 transition">
+              <p class="italic mb-4 text-lg text-center text-gray-700">
+                "Losing my YouTube channel on September 4th due to AI technology's unforeseen actions has shattered my spirit. It felt like my world collapsed — a place where I poured my heart into daily game updates and trending shorts, connecting with my audience every single day. The pain of that loss is indescribable; it’s as if I lost a part of myself, a dream I tirelessly built with passion and dedication."
+              </p>
+              <div class="flex items-center justify-center space-x-4 mt-4">
+                <img src="image/ak.jpg" alt="Your Image"
+                  class="w-16 h-16 rounded-full border border-gray-400" />
+                <div>
+                  <p class="font-semibold text-lg">A Creator Who Cares</p>
+                  <p class="text-sm text-gray-600">Sharing My Passion and
+                    Pain</p>
+                </div>
+              </div>
+            </div>
+            <div
+              class="bg-gray-100 border border-gray-300 p-6 rounded-lg shadow hover:scale-105 transition">
+              <p class="italic mb-4 text-lg text-center text-gray-700">
+                "Every day, I dedicated myself to creating engaging game updates and trending shorts, hoping to bring joy and excitement to my viewers. Now, I stand at a crossroads, battling the trauma of losing that platform — a place where my efforts and dreams once flourished. This experience has taught me resilience, but the ache remains, reminding me of what I’ve lost and what I strive to rebuild."
+              </p>
+              <div class="flex items-center justify-center space-x-4 mt-4">
+                <img src="image/niku.png" alt="Your Image"
+                  class="w-16 h-16 rounded-full border border-gray-400" />
+                <div>
+                  <p class="font-semibold text-lg">A Resilient Creator</p>
+                  <p class="text-sm text-gray-600">Fighting Through the Pain</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contact -->
+        <section id="contact"
+          class="bg-white rounded-lg shadow-lg p-8 mb-12 border border-gray-300 mx-auto max-w-4xl">
+          <h2
+            class="text-3xl font-semibold mb-4 flex items-center justify-center"><i
+              class="fas fa-envelope-open-text"></i> Contact Me</h2>
+          <form class="max-w-2xl mx-auto space-y-4" id="contactForm" novalidate>
+            <div>
+              <label class="block mb-2 font-bold" for="name">Name</label>
+              <input type="text" id="name"
+                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                required />
+            </div>
+            <div>
+              <label class="block mb-2 font-bold" for="email">Email</label>
+              <input type="email" id="email"
+                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                required />
+            </div>
+            <div>
+              <label class="block mb-2 font-bold" for="message">Message</label>
+              <textarea id="message" rows="4"
+                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
+                required></textarea>
+            </div>
+            <button type="submit"
+              class="bg-blue-500 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-600 transition">Send
+              Message</button>
+          </form>
+          <!-- Social Icons -->
+          <div class="flex justify-center space-x-6 mt-4">
+            <a href="https://linkedin.com/in/raval-nikunj" target="_blank"
+              class="text-blue-500 hover:scale-110 transition"
+              title="LinkedIn"><i class="fab fa-linkedin fa-2x"></i></a>
+            <a href="https://youtube.com/@NikuPlays_Gamer" target="_blank"
+              class="text-blue-500 hover:scale-110 transition"
+              title="YouTube"><i class="fab fa-youtube fa-2x"></i></a>
+            <a href="mailto:ravalnikunj@gmail.com"
+              class="text-blue-500 hover:scale-110 transition" title="Email">
+              <i class="fas fa-envelope fa-2x"></i>
+            </a>
+          </div>
+        </section>
+
+        <!-- Resume -->
+        <section id="resume" class="py-12 bg-orange-100 rounded-lg">
+          <div class="max-w-4xl mx-auto px-4 rounded-lg">
+            <h2
+              class="text-3xl font-semibold mb-8 flex items-center justify-center"><i
+                class="fas fa-file-alt"></i> Resume</h2>
+            <div
+              class="bg-white p-8 rounded-lg shadow-lg space-y-6 text-gray-700">
+              <h3 class="text-2xl font-semibold mb-4">Professional Summary</h3>
+              <p>Experienced As Fullstack Developer Intern, Passionate About
+                Creating Modern Websites. Now i Whould Like To Focus On Backend
+                Progrraming Language. Skilled in HTML, CSS, JavaScript, Php,
+                Laravel, MySql And Backend Tech. Always eager to learn and
+                improve.</p>
+
+              <h3 class="text-2xl font-semibold mb-4">Internship Experience</h3>
+              <ul class="list-disc list-inside space-y-4">
+                <li>
+                  <strong>Full Stack Developer Intern</strong> at Sypze
+                  Technology (June 2023 - Jan 2024)
+                  <p>Developed web applications, collaborated with teams, and
+                    learned PHP and backend development.</p>
+                </li>
+                <li style="display: flex; align-items: center; gap: 10px;">
+                  <div style="flex: 1;">
+                    <strong>Content Creator</strong> AloneKnight (Feb 2024 - Sep
+                    2025 )
+                    <p style="margin: 0;">I Had My Gaming Channel on YouTube
+                      with 36K subscribers.</p>
+                  </div>
+                  <a href="https://www.youtube.com/@NikuPlays_Gamer"
+                    target="_blank" rel="noopener noreferrer"
+                    class="youtube-logo-link inline-flex items-center relative"
+                    style="gap: 8px;">
+                    <img
+                      src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
+                      alt="YouTube Channel" class="youtube-logo"
+                      style="width: 44px; height: 44px;" />
+                    <span class="hover-text" style="position: absolute; bottom: -25px; left: 50%; transform: translateX(-50%);background: #ff0000; color: #fff; padding: 4px 8px; border-radius: 4px; font-size: 12px; display: none;">
+                      Click here to visit channel
+                    </span>
+                  </a>
+                </li>
+              </ul>
+              <a href="image/NikunjRaval.pdf" download
+                class="mt-4 inline-block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600 transition">Download
+                Resume</a>
+            </div>
+          </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="mt-12 p-4 text-center text-gray-500">
+          &copy; Made By Nikunj Raval. All rights reserved.
+        </footer>
+
+      </div>
+    </div>
+
+    <!-- Scripts for menu toggle -->
+    <script>
+  // Mobile menu toggle
+  const menuToggleBtn = document.getElementById('menu-toggle');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const sidebar = document.getElementById('sidebar');
+
+  menuToggleBtn.addEventListener('click', () => {
+    mobileMenu.classList.toggle('hidden');
+    sidebar.classList.toggle('hidden');
+  });
+
+  // Clicking outside closes menu
+  document.getElementById('mobile-menu').addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+    sidebar.classList.remove('hidden');
+  });
+
+  // Lightbox functions
+  function openLightbox(src) {
+    document.getElementById('lightbox').classList.remove('hidden');
+    document.getElementById('lightbox-img').src = src;
+  }
+  function closeLightbox() {
+    document.getElementById('lightbox').classList.add('hidden');
+  }
+
+  // Attach event to gallery images
+  document.querySelectorAll('img[data-img]').forEach(img => {
+    img.addEventListener('click', () => {
+      openLightbox(img.getAttribute('data-img'));
+    });
+  });
+
+  // Video functions
+  const videoElement = document.getElementById('localVideo');
+  function openVideo(videoPath) {
+    videoElement.src = videoPath;
+    document.getElementById('videoModal').classList.remove('hidden');
+    videoElement.play();
+    // auto close on pause
+    videoElement.onpause = () => {
+      if (videoElement.currentTime > 0 && !videoElement.ended && !videoElement.paused) return;
+      closeVideo();
+    };
+  }
+  function closeVideo() {
+    videoElement.pause();
+    videoElement.src = '';
+    document.getElementById('videoModal').classList.add('hidden');
+  }
+
+  // GSAP Animations
+  document.addEventListener('DOMContentLoaded', () => {
+    gsap.utils.toArray('section').forEach((section, i) => {
+      gsap.fromTo(section, { scale: 0.8, opacity: 0 }, { scale: 1, opacity: 1, duration: 1, delay: i * 0.2, ease: 'back.out(1.7)' });
+    });
+  });
+
+  function scrollToSection(selector) {
+    document.querySelector(selector).scrollIntoView({ behavior: 'smooth' });
+  }
+
+  // Contact form alert
+  document.getElementById('contactForm')?.addEventListener('submit', e => {
+    e.preventDefault();
+    alert('Thank you! Your message has been sent.');
+    document.getElementById('contactForm').reset();
+  });
+</script>
+
+  </body>
+</html>
