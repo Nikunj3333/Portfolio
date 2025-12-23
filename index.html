@@ -14,6 +14,8 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap"
       rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/06561967c5.js"
+      crossorigin="anonymous"></script>
     <style>
   body {
     margin: 0;
@@ -65,7 +67,8 @@
 
         <!-- Header -->
         <section class="text-center mb-12">
-          <h1 class="text-4xl md:text-5xl font-bold mb-4 text-white">Nikunj Raval</h1>
+          <h1 class="text-4xl md:text-5xl font-bold mb-4 text-white">Nikunj
+            Raval</h1>
           <p class="text-xl md:text-2xl text-white">Web Developer | Gamer |
             Content Creator</p>
         </section>
@@ -75,16 +78,23 @@
           class="bg-white rounded-lg shadow-lg p-8 mb-12 border border-gray-300 mx-auto max-w-4xl">
           <div class="flex flex-col md:flex-row items-center md:space-x-8">
             <div
-              class="md:w-1/2 relative mb-4 md:mb-0 rounded-lg overflow-hidden border border-gray-300 shadow-lg aspect-w-4 aspect-h-3 md:aspect-w-3 md:aspect-h-2">
-              <img src="image/nik (1).png" alt="Nikunj"
-                class="w-full h-full object-cover" />
+              class="md:w-1/2 relative mb-4 md:mb-0 rounded-lg overflow-hidden border border-gray-300 shadow-lg aspect-w-4 aspect-h-3 md:aspect-w-3 md:aspect-h-2 group cursor-pointer transition-transform duration-300 hover:scale-105">
+              <div
+                class="relative w-full h-full transition-all duration-500 ease-in-out transform group-hover:shadow-[0_0_20px_5px_rgba(0,0,0,0.2)] group-hover:border-4 group-hover:border-blue-400 rounded-lg overflow-hidden">
+                <img src="image/nik.jpg" alt="Nikunj"
+                  class="w-full h-full object-cover" />
+              </div>
             </div>
             <div class="md:w-1/2 p-4 text-center md:text-left">
-              <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+              <h2
+                class="text-3xl font-semibold mb-8 flex items-center justify-center text-indigo-600">About
+                Me</h2>
               <p class="text-gray-700 mb-4">Hello! I am Nikunj Raval, A
                 Passionate Web Developer, Gamer, and Content Creator with 36k
                 subscribers. I love following both My passions and my
-                Profession. For now I Whould Like To Focus More In Backend Programming To, Eager to learn more in the IT industry. Experience
+                Profession. For now I Whould Like To Focus More In Backend
+                Programming To, Eager to learn more in the IT industry.
+                Experience
                 as a Full Stack Developer Intern at Sypze Technology, While Done
                 This Project -> <a href="http://gtf.org.in" target="_blank"
                   class="text-blue-500 hover:underline">gtf.org.in</a>.</p>
@@ -95,44 +105,79 @@
           </div>
         </section>
 
-        <!-- Skills -->
+        <!-- Skills Section -->
         <section id="skills"
-          class="bg-white rounded-lg shadow-lg p-8 mb-12 border border-gray-300 mx-auto max-w-4xl">
+          class="bg-white rounded-lg shadow-lg p-8 mb-12 border border-gray-300 mx-auto max-w-4xl transition-transform transform hover:scale-105 hover:shadow-xl">
           <h2
-            class="text-3xl font-semibold mb-8 flex items-center justify-center"><i
-              class="fas fa-code mr-2"></i> Skills</h2>
-          <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
+            class="text-3xl font-semibold mb-8 flex items-center justify-center text-indigo-600">
+            <i class="fas fa-code mr-2"></i> Skills
+          </h2>
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8 px-4">
             <div
-              class="p-4 bg-gray-100 border border-gray-300 rounded-lg shadow hover:scale-105 transition">
-              <h3 class="font-bold mb-2">HTML & CSS</h3>
-              <p class="text-gray-600">Building structured and styled web
-                pages</p>
+              class="bg-gray-50 border border-gray-300 rounded-lg shadow hover:shadow-xl transition-transform hover:scale-105 p-6">
+              <h3
+                class="flex items-center justify-center font-bold mb-3 text-indigo-500 text-xl">
+                <i class="fas fa-html5 mr-2"></i> HTML & CSS
+              </h3>
+              <p class="text-gray-600 text-center">Building structured and
+                styled web pages</p>
             </div>
             <div
-              class="p-4 bg-gray-100 border border-gray-300 rounded-lg shadow hover:scale-105 transition">
-              <h3 class="font-bold mb-2">JavaScript</h3>
-              <p class="text-gray-600">Making interactive web applications</p>
+              class="bg-gray-50 border border-gray-300 rounded-lg shadow hover:shadow-xl transition-transform hover:scale-105 p-6">
+              <h3
+                class="flex items-center justify-center font-bold mb-3 text-indigo-500 text-xl">
+                <i class="fab fa-js-square mr-2"></i> JavaScript
+              </h3>
+              <p class="text-gray-600 text-center">Making interactive web
+                applications</p>
             </div>
             <div
-              class="p-4 bg-gray-100 border border-gray-300 rounded-lg shadow hover:scale-105 transition">
-              <h3 class="font-bold mb-2">Php/Laravel</h3>
-              <p class="text-gray-600">Build Backend As Admin Pannel For Client
-                To Manage Things of Project</p>
+              class="bg-gray-50 border border-gray-300 rounded-lg shadow hover:shadow-xl transition-transform hover:scale-105 p-6">
+              <h3
+                class="flex items-center justify-center font-bold mb-3 text-indigo-500 text-xl">
+                <i class="fab fa-php mr-2"></i> PHP / Laravel
+              </h3>
+              <p class="text-gray-600 text-center">Build Backend & Admin Panel
+                for Projects</p>
             </div>
             <div
-              class="p-4 bg-gray-100 border border-gray-300 rounded-lg shadow hover:scale-105 transition">
-              <h3 class="font-bold mb-2">MySql</h3>
-              <p class="text-gray-600">Use For Database To Store Data</p>
+              class="bg-gray-50 border border-gray-300 rounded-lg shadow hover:shadow-xl transition-transform hover:scale-105 p-6">
+              <h3
+                class="flex items-center justify-center font-bold mb-3 text-indigo-500 text-xl">
+                <i class="fas fa-database mr-2"></i> MySQL
+              </h3>
+              <p class="text-gray-600 text-center">Use for Database Storage</p>
             </div>
             <div
-              class="p-4 bg-gray-100 border border-gray-300 rounded-lg shadow hover:scale-105 transition">
-              <h3 class="font-bold mb-2">Capcut</h3>
-              <p class="text-gray-600">Creating Awesome Edits</p>
+              class="bg-gray-50 border border-gray-300 rounded-lg shadow hover:shadow-xl transition-transform hover:scale-105 p-6">
+              <h3
+                class="flex items-center justify-center font-bold mb-3 text-indigo-500 text-xl">
+                <i class="fas fa-video mr-2"></i> Capcut
+              </h3>
+              <p class="text-gray-600 text-center">Creating Awesome Edits</p>
             </div>
             <div
-              class="p-4 bg-gray-100 border border-gray-300 rounded-lg shadow hover:scale-105 transition">
-              <h3 class="font-bold mb-2">Extra - GitHub & Postman</h3>
-              <p class="text-gray-600">Manage And Track Project UptoDate</p>
+              class="bg-gray-50 border border-gray-300 rounded-lg shadow hover:shadow-xl transition-transform hover:scale-105 p-6">
+              <h3
+                class="flex items-center justify-center font-bold mb-3 text-indigo-500 text-xl">
+                <i class="fas fa-tools mr-2"></i> GitHub & Postman
+              </h3>
+              <p class="text-gray-600 text-center">Manage and Track Projects
+                Up-to-Date</p>
+            </div>
+            <!-- Added Skills -->
+            <div
+              class="bg-gray-50 border border-gray-300 rounded-lg shadow hover:shadow-xl transition-transform hover:scale-105 p-6 col-span-1 md:col-span-3">
+              <h3
+                class="flex items-center justify-center font-bold mb-3 text-indigo-500 text-xl">
+                <i class="fas fa-star mr-2"></i> Additional Skills
+              </h3>
+              <ul class="list-disc list-inside text-gray-700">
+                <li>Web development frameworks (BootStrap, Tailwind, etc.)</li>
+                <li>Database management and SQL</li>
+                <li>C Programming</li>
+                <li>C++ with Object-Oriented Programming (OOP) Concepts</li>
+              </ul>
             </div>
           </div>
         </section>
@@ -141,7 +186,7 @@
         <section id="projects"
           class="bg-white rounded-lg shadow-lg p-8 mb-12 border border-gray-300 mx-auto max-w-4xl">
           <h2
-            class="text-3xl font-semibold mb-8 flex items-center justify-center"><i
+            class="text-3xl font-semibold mb-8 flex items-center justify-center text-indigo-600"><i
               class="fas fa-briefcase"></i> My Projects</h2>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <!-- Project 1 -->
@@ -174,7 +219,7 @@
         <section id="gallery"
           class="bg-white rounded-lg shadow-lg p-8 mb-12 border border-gray-300 mx-auto max-w-4xl">
           <h2
-            class="text-3xl font-semibold mb-8 flex items-center justify-center"><i
+            class="text-3xl font-semibold mb-8 flex items-center justify-center text-indigo-600"><i
               class="fas fa-image"></i> Portfolio Gallery</h2>
           <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
             <div
@@ -212,7 +257,7 @@
         <section id="videos"
           class="bg-white rounded-lg shadow-lg p-8 mb-12 border border-gray-300 mx-auto max-w-4xl">
           <h2
-            class="text-3xl font-semibold mb-8 flex items-center justify-center"><i
+            class="text-3xl font-semibold mb-8 flex items-center justify-center text-indigo-600"><i
               class="fa fa-youtube"></i> Barrier Videos</h2>
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <!-- Video 1 -->
@@ -256,7 +301,7 @@
         <section id="journey"
           class="bg-white rounded-lg shadow-lg p-8 mb-12 border border-gray-300 mx-auto max-w-4xl">
           <h2
-            class="text-3xl font-semibold mb-8 flex items-center justify-center"><i
+            class="text-3xl font-semibold mb-8 flex items-center justify-center text-indigo-600"><i
               class="fas fa-heart-broken"></i> My 36k Journey & Challenges</h2>
           <div class="space-y-6">
             <div
@@ -295,31 +340,32 @@
         <section id="contact"
           class="bg-white rounded-lg shadow-lg p-8 mb-12 border border-gray-300 mx-auto max-w-4xl">
           <h2
-            class="text-3xl font-semibold mb-4 flex items-center justify-center"><i
+            class="text-3xl font-semibold mb-8 flex items-center justify-center text-indigo-600"><i
               class="fas fa-envelope-open-text"></i> Contact Me</h2>
           <form class="max-w-2xl mx-auto space-y-4" id="contactForm" novalidate>
             <div>
               <label class="block mb-2 font-bold" for="name">Name</label>
-              <input type="text" id="name"
-                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-                required />
+              <input type="text" id="name" name="name" placeholder="Name"
+                required
+                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" />
             </div>
             <div>
               <label class="block mb-2 font-bold" for="email">Email</label>
-              <input type="email" id="email"
-                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-                required />
+              <input type="email" id="email" name="email" placeholder="Email"
+                required
+                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400" />
             </div>
             <div>
               <label class="block mb-2 font-bold" for="message">Message</label>
-              <textarea id="message" rows="4"
-                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"
-                required></textarea>
+              <textarea id="message" name="message" rows="4"
+                placeholder="Message" required
+                class="w-full p-3 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
             </div>
             <button type="submit"
               class="bg-blue-500 text-white px-6 py-3 rounded-lg shadow hover:bg-blue-600 transition">Send
               Message</button>
           </form>
+
           <!-- Social Icons -->
           <div class="flex justify-center space-x-6 mt-4">
             <a href="https://linkedin.com/in/raval-nikunj" target="_blank"
@@ -329,17 +375,45 @@
               class="text-blue-500 hover:scale-110 transition"
               title="YouTube"><i class="fab fa-youtube fa-2x"></i></a>
             <a href="mailto:ravalnikunj@gmail.com"
-              class="text-blue-500 hover:scale-110 transition" title="Email">
-              <i class="fas fa-envelope fa-2x"></i>
-            </a>
+              class="text-blue-500 hover:scale-110 transition" title="Email"><i
+                class="fas fa-envelope fa-2x"></i></a>
           </div>
         </section>
+
+        <script>
+  document.getElementById('contactForm').addEventListener('submit', function(e) {
+    e.preventDefault(); // Prevent default form submission
+    
+    // Send form data via fetch
+    fetch('submit_contact.php', {
+      method: 'POST',
+      body: new FormData(this)
+    })
+    .then(response => {
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      return response.json(); // Parse JSON response
+    })
+    .then(data => {
+      if (data.message) {
+        alert(data.message); // Show success message
+      } else {
+        alert('Unexpected response'); // Fallback
+      }
+    })
+    .catch(error => {
+      alert('Error sending message: ' + error.message);
+      // console.error(error);
+    });
+  });
+</script>
 
         <!-- Resume -->
         <section id="resume" class="py-12 bg-orange-100 rounded-lg">
           <div class="max-w-4xl mx-auto px-4 rounded-lg">
             <h2
-              class="text-3xl font-semibold mb-8 flex items-center justify-center"><i
+              class="text-3xl font-semibold mb-8 flex items-center justify-center text-indigo-600"><i
                 class="fas fa-file-alt"></i> Resume</h2>
             <div
               class="bg-white p-8 rounded-lg shadow-lg space-y-6 text-gray-700">
@@ -373,7 +447,8 @@
                       src="https://cdn-icons-png.flaticon.com/512/1384/1384060.png"
                       alt="YouTube Channel" class="youtube-logo"
                       style="width: 44px; height: 44px;" />
-                    <span class="hover-text" style="position: absolute; bottom: -25px; left: 50%; transform: translateX(-50%);background: #ff0000; color: #fff; padding: 4px 8px; border-radius: 4px; font-size: 12px; display: none;">
+                    <span class="hover-text"
+                      style="position: absolute; bottom: -25px; left: 50%; transform: translateX(-50%);background: #ff0000; color: #fff; padding: 4px 8px; border-radius: 4px; font-size: 12px; display: none;">
                       Click here to visit channel
                     </span>
                   </a>
@@ -387,7 +462,8 @@
         </section>
 
         <!-- Footer -->
-        <footer class="mt-12 p-4 text-center text-gray-500">
+        <footer
+          class="mt-12 p-6 bg-gray-900 text-center text-orange-500 border-t-4 border-orange-500 shadow-lg rounded-lg transition-transform hover:scale-105 hover:shadow-xl">
           &copy; Made By Nikunj Raval. All rights reserved.
         </footer>
 
